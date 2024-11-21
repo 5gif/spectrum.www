@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.12.0">
+
+<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin>
+<link rel="preload" as="style" href="./_import/css/style.d2c9a9a3.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/css/style.d2c9a9a3.css">
+<link rel="modulepreload" href="./_observablehq/client.68923eea.js">
+<link rel="modulepreload" href="./_observablehq/runtime.3b5fbfd2.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.fbe34e68.js">
+<link rel="icon" href="./_file/images/background.adc5f424.svg" type="image/png" sizes="32x32">
+<script type="module">
+
+if (location.pathname.endsWith("/")) {
+  const alt = location.pathname.slice(0, -1);
+  fetch(alt, {method: "HEAD"}).then((response) => response.ok && location.replace(alt + location.search + location.hash));
+}
+
+</script>
+<script type="module">
+
+import "./_observablehq/client.68923eea.js";
+
+</script>
+<div id="observablehq-center">
+<header id="observablehq-header">
+<div class="menubar"><div class="menubrand"><a class="logo" href="./"> <img src="./_file/icons/5gif.8280ea68.png">  5GIF - Spectrum Studies</a>          </div><div class="rightmenubar"><a class="item undefined" href="./articles">  Articles </a></div><a class="item" target="_blank" href="https://x.com/5gindiaforum.in" rel="noopener noreferrer"> <i class="fa fa-solid fa-brands fa-twitter large"></i> </a><a class="item" target="_blank" href="https://linkedin.com/company/5gif" rel="noopener noreferrer"> <i class="fa fa-solid fa-brands fa-linkedin large"></i> </a><a class="item" target="_blank" href="https://github.com/5gif" rel="noopener noreferrer"> <i class="fa fa-solid fa-brands fa-github large"></i> </a><div class="ui dropdown item" id="login">    
+        <i class="bars large  icon"></i> <i class="angle down large  icon"></i>                
+    <div class="left stackable menu ">     
+    <a class="item mobileitem" href="./articles">  Articles </a>
+        <div class="header">  <span id="xuserinfo">USER </span> </div>      
+        <div class="item" data-user-auth="">      <i class="icon user"></i>Profile      </div>
+        <div class="item" data-user-auth="">     <i class="icon wrench"></i>Settings       </div>
+        <div class="item" data-user-auth=""> <i class="icon folder"></i>Documents</div>
+        <div class="item" id="logout"> <i class="icon  sign in alternate"></i> Sign In</div> 
+    </div>
+
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<link type="text/css" rel="stylesheet" href="./_file/css/style.fc69317c.css">
+
+
+<div class="ui green right ribbon label hidden" id="userinfo"> </div>
+<div id="loginformparent" class="ui inverted tiny modal" hidden=""></div>
+  <script> 
+    // function toggleBigMenu(){
+    // var box=document.querySelector("#bigmenubox");
+    // box.classList.toggle("visible");
+    // }
+
+    $(".ui.dropdown").dropdown()
+  </script>
+
+    <script type="module">
+    // const {showLogin,getCurrentUser,logOut} = await import( fbauthpath )
+
+    import {showLogin,getCurrentUser,logOut} from "/components/fbauth.js"
+    document.getElementById("logout").addEventListener("click", function (e) {  
+
+      getCurrentUser().then(u=>{
+        if(u==null){
+        $("#loginformparent").modal('show');        
+          showLogin("#loginformparent","#userinfo");
+        }else{
+        document.querySelector("#userinfo").classList.add("hidden");
+          logOut();
+        }
+        
+      })
+});
+</script>
+    
+    
+</header>
+<main id="observablehq-main" class="observablehq">
+<style>
+
+   
+    .p404 {
+
+    display: flex;
+    flex-direction:column;
+    justify-content: start;
+    background-image: url('/_file/images/404.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 40%;
+    /* height: 80vh; */
+    height:497px;
+    margin-top:10vh;
+    transition:400ms;
+
+    
+    
+/* border-radius: 30px; */
+    /* box-shadow: 0px 0px 13px 13px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    }
+
+
+@media (max-width: 750px) {    
+        .p404{
+            margin-top:0;
+        }
+        .p404 div {
+    /* margin-top: 10vh; */
+    /* font-size: 10px; */
+    /* text-align: center; */
+   } 
+    }
+
+.p404 div {
+    margin-top: 0;
+    top:0;
+    font-size: 5vw;
+    /* margin-left:auto; */
+    text-align: center;
+   } 
+    </style>
+ <div class="p404"> 
+ <!-- <img src="./images/404.png" width=50 alt="Page not found !!" >   -->
+<div style="text-align:center"> 📵 PAGE NOT FOUND</div>
+ </div> 
+<!-- <div class="hero">  -->
+  <!-- <img src="./images/404.png" alt="Page not found !!" >   -->
+<!-- </div> -->
+<!-- <img src="./images/404.png" alt="Page not found !!"> -->
+</main>
+<footer id="observablehq-footer">
+<div><hr><div style="text-align:center">
+    © 2024 - 5G India Forum
+    </div>
+    <br><br>
+    </div>
+</footer>
+</div>
