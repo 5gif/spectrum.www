@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.12.0">
+<title>Reference Article</title>
+
+<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin>
+<link rel="preload" as="style" href="./_import/css/style.d2c9a9a3.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/css/style.d2c9a9a3.css">
+<link rel="modulepreload" href="./_observablehq/client.bbb70eff.js">
+<link rel="modulepreload" href="./_observablehq/runtime.0c079482.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.97c14579.js">
+<link rel="modulepreload" href="./_import/components/utils.2f8dbc74.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/e828d8c8.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/a62ae5ce.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/e95f898e.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/d44feff9.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/5830b12a.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/84d7b8e9.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/2c0cdfa2.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/626bedc4.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/00c41b5d.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/b5f7cdc6.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/b22c5864.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/6f15f633.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/ef1ec490.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/5e1ff060.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/5851d7ef.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/dcd02767.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/f1db2593.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/034b7bcb.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/4bb53638.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/bbafde58.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/aa5b35a8.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/32c7fec2.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/567840a0.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/cf9b720b.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/5dcd62f4.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/f8e03c56.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/5bc129e1.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/19c92b44.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/f31b5398.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/8debb4ba.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/4b0cc581.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/1ee6c50d.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
+<link rel="icon" href="./_file/images/background.adc5f424.svg" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.bbb70eff.js";
+
+define({id: "f8e84277", outputs: ["Banner"], body: async () => {
+const {Banner} = await import("./_import/components/utils.2f8dbc74.js");
+
+return {Banner};
+}});
+
+define({id: "37d4bcc4", mode: "inline", inputs: ["Banner","display"], body: async (Banner,display) => {
+display(await(
+Banner("Articles")
+))
+}});
+
+define({id: "ef0efb38", mode: "inline", inputs: ["Plot","display"], body: async (Plot,display) => {
+display(await(
+Plot.dotX("abcdef", {r: 5, fill: Plot.identity}).plot({axis: null, width: 100, height: 12,color:{scheme:"plasma"}})
+))
+}});
+
+define({id: "20804318", mode: "inline", inputs: ["Plot","display"], body: async (Plot,display) => {
+display(await(
+Plot.lineY([1, 2, 0, 4, 0, 3, 1, 5, 7, 2, 3]).plot({axis: null, width: 80, height: 18})
+))
+}});
+
+</script>
+<div id="observablehq-center">
+<header id="observablehq-header">
+<div class="menubar"><div class="menubrand"><a class="logo" href="./"> <img src="./_file/icons/5gif.8280ea68.png">  5GIF - Spectrum Studies</a>          </div><div class="rightmenubar"><a class="item undefined" href="./articles">  Articles </a></div><a class="item" target="_blank" href="https://x.com/5gindiaforum.in" rel="noopener noreferrer"> <i class="fa fa-solid fa-brands fa-twitter large"></i> </a><a class="item" target="_blank" href="https://linkedin.com/company/5gif" rel="noopener noreferrer"> <i class="fa fa-solid fa-brands fa-linkedin large"></i> </a><a class="item" target="_blank" href="https://github.com/5gif" rel="noopener noreferrer"> <i class="fa fa-solid fa-brands fa-github large"></i> </a><div class="ui dropdown item" id="login">    
+        <i class="bars large  icon"></i> <i class="angle down large  icon"></i>                
+    <div class="left stackable menu ">     
+    <a class="item mobileitem" href="./articles">  Articles </a>
+        <div class="header">  <span id="xuserinfo">USER </span> </div>      
+        <div class="item" data-user-auth="">      <i class="icon user"></i>Profile      </div>
+        <div class="item" data-user-auth="">     <i class="icon wrench"></i>Settings       </div>
+        <div class="item" data-user-auth=""> <i class="icon folder"></i>Documents</div>
+        <div class="item" id="logout"> <i class="icon  sign in alternate"></i> Sign In</div> 
+    </div>
+
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<link type="text/css" rel="stylesheet" href="./_file/css/style.fc69317c.css">
+
+
+<div class="ui green right ribbon label hidden" id="userinfo"> </div>
+<div id="loginformparent" class="ui inverted tiny modal" hidden=""></div>
+  <script> 
+    // function toggleBigMenu(){
+    // var box=document.querySelector("#bigmenubox");
+    // box.classList.toggle("visible");
+    // }
+
+    $(".ui.dropdown").dropdown()
+  </script>
+
+    <script type="module">
+    // const {showLogin,getCurrentUser,logOut} = await import( fbauthpath )
+
+    import {showLogin,getCurrentUser,logOut} from "/components/fbauth.js"
+    document.getElementById("logout").addEventListener("click", function (e) {  
+
+      getCurrentUser().then(u=>{
+        if(u==null){
+        $("#loginformparent").modal('show');        
+          showLogin("#loginformparent","#userinfo");
+        }else{
+        document.querySelector("#userinfo").classList.add("hidden");
+          logOut();
+        }
+        
+      })
+});
+</script>
+    
+    
+</header>
+<main id="observablehq-main" class="observablehq">
+<div class="observablehq observablehq--block"><!--:f8e84277:--></div>
+<div id="parent">
+<observablehq-loading></observablehq-loading><!--:37d4bcc4:-->
+</div>
+<p class="note">This page will have  updates, and the developments of sharing studies related activities and reference links to ITU-R documents.</p>
+<hr>
+<!-- ${ref} -->
+<div class="ui piled segment">
+<h2 id="wp-5-d-47" tabindex="-1"><a class="observablehq-header-anchor" href="#wp-5-d-47">WP5D#47</a></h2>
+<p><em>Oct’ 2024</em> <observablehq-loading></observablehq-loading><!--:ef0efb38:--></p>
+<p><observablehq-loading></observablehq-loading><!--:20804318:--></p>
+<p class="editornote">Will be updated soon</p>
+<h2 id="wp-5-d-46" tabindex="-1"><a class="observablehq-header-anchor" href="#wp-5-d-46">WP5D#46</a></h2>
+<p><em>June 2024</em></p>
+<p class="editornote">Will be updated soon</p>
+</div>
+</main>
+<footer id="observablehq-footer">
+<div><hr><div style="text-align:center">
+    © 2024 - 5G India Forum
+    </div>
+    <br><br>
+    </div>
+</footer>
+</div>
